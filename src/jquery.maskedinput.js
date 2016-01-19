@@ -406,6 +406,8 @@ $.fn.extend({
 					var pos;
 
 					focusText = input.val();
+					if (focusText === "")
+						clearBuffer(0, len);
 
 					pos = checkVal();
 
